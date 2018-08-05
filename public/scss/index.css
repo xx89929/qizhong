@@ -1,0 +1,175 @@
+.index-tit {
+  margin-top: 50px;
+  margin-bottom: 40px; }
+
+.services {
+  margin-bottom: 100px; }
+  .services ul li {
+    width: 24.6%;
+    display: inline-block; }
+    .services ul li img {
+      width: 100%; }
+    .services ul li h4 {
+      margin: 10px 0; }
+    .services ul li p {
+      word-wrap: break-word;
+      color: #707070; }
+
+.case-warp {
+  width: 100%; }
+
+.case-item-warp {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block; }
+  .case-item-warp:hover .case-item-bg {
+    opacity: 1; }
+    .case-item-warp:hover .case-item-bg .case-item-bg-tit h3 {
+      transform: translateY(0);
+      opacity: 1; }
+    .case-item-warp:hover .case-item-bg .case-item-bg-tit p {
+      transform: translateY(0);
+      opacity: 1; }
+  .case-item-warp img {
+    width: 100%; }
+
+.case-item-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding-top: 100px;
+  opacity: 0;
+  transition: all 0.5s; }
+
+.case-item-bg-tit h3 {
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s; }
+.case-item-bg-tit p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s; }
+.case-item-bg-tit a {
+  color: white; }
+  .case-item-bg-tit a:hover {
+    color: white !important; }
+
+.news-tags a {
+  border-radius: 0 !important; }
+
+.g-rect-path {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #d3dce6;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+
+.g-rect-fill {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #707070;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 0, 400;
+  stroke-dashoffset: 0;
+  animation: lineMove 1s linear forwards;
+  animation-play-state: paused; }
+
+@keyframes lineMove {
+  0% {
+    stroke-dasharray: 0, 292; }
+  100% {
+    stroke-dasharray: 292, 292; } }
+.case-index-more {
+  margin-top: 40px; }
+  .case-index-more a {
+    font-size: 30px;
+    padding: 5px 30px;
+    border: 2px solid #707070;
+    transition: all .2s; }
+    .case-index-more a:hover {
+      background-color: #0073ba;
+      color: white !important;
+      border: 0;
+      border: 2px solid #0073ba; }
+
+.circle-load-rect-svg, .circle-load-rect-svg-1 {
+  top: 0px;
+  left: 275px;
+  position: absolute;
+  z-index: -99; }
+
+.circle-load-rect-svg-1 {
+  left: 645px; }
+
+.news-index {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+.news-item-warp {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 99; }
+  .news-item-warp label {
+    color: #707070; }
+  .news-item-warp h4 a:hover {
+    color: inherit !important; }
+  .news-item-warp span {
+    border-right: 1px solid #707070;
+    padding: 0 5px; }
+    .news-item-warp span:last-child {
+      border-right: 0; }
+  .news-item-warp h4 a, .news-item-warp span, .news-item-warp label {
+    transition: all 0.2s; }
+  .news-item-warp:hover h4 a, .news-item-warp:hover span, .news-item-warp:hover label {
+    text-shadow: -2px -1px 1px #bebebe; }
+
+.flow-warp {
+  padding: 80px 0;
+  height: 658px;
+  overflow: hidden; }
+
+.flow-tit {
+  color: white;
+  margin-bottom: 40px; }
+
+.flow-content {
+  margin-top: 40px;
+  padding: 50px 0;
+  animation: flow-content-animation 3s 3s forwards;
+  animation-play-state: paused; }
+  .flow-content i {
+    font-size: 174px; }
+
+@keyframes flow-content-animation {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(-500px); } }
+.flow-num {
+  margin-top: 40px; }
+  .flow-num div:nth-child(1) {
+    animation: proRotate 1s ease-in-out alternate none 1;
+    animation-play-state: paused; }
+  .flow-num div:nth-child(2) {
+    animation: proRotate 2s ease-in-out  alternate none 1;
+    animation-play-state: paused; }
+  .flow-num div:nth-child(3) {
+    animation: proRotate 3s ease-in-out  alternate none 1;
+    animation-play-state: paused; }
+  .flow-num div i {
+    font-size: 300px; }
+
+@keyframes proRotate {
+  0% {
+    transform: rotateY(-120deg) translateZ(-180px);
+    opacity: 0; }
+  100% {
+    transform: rotateY(0deg) translateZ(0px);
+    opacity: 1; } }
+
+/*# sourceMappingURL=index.css.map */

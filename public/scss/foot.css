@@ -1,0 +1,25 @@
+.foot {
+  padding: 20px 0; }
+
+.foot-item a:hover {
+  color: white !important; }
+.foot-item h3 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #59c4f9; }
+  .foot-item h3 a {
+    color: white; }
+.foot-item ul li a {
+  color: white; }
+
+.foot-r2 ul {
+  margin-bottom: 35px; }
+  .foot-r2 ul li h3 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #59c4f9;
+    color: white; }
+  .foot-r2 ul li p {
+    color: white; }
+
+/*# sourceMappingURL=foot.css.map */
