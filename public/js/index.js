@@ -7,10 +7,10 @@ $(document).ready(function(){
 
 
 function MobileAnimation(){
-    $('.case-index-box').css('animation-play-state','running');
-    $('.flow-num,.flow-num div').css('animation-play-state','running');
-    $('.flow-content').css('animation-play-state','running');
-    $('.fb-button-path').css('animation-play-state','running');
+    $('.case-index-box').css({'animation-play-state':'running','opacity': 1});
+    $('.flow-num,.flow-num div').css({'animation-play-state':'running','opacity': 1});
+    $('.flow-content').css({'animation-play-state':'running','opacity': 1});
+    $('.fb-button-path').css({'animation-play-state':'running','opacity': 1});
 }
 
 
