@@ -4,15 +4,10 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Storage;
 
 class UploadsController extends Controller
 {
-
-
     public function editUploads(Request $request){
-
-        $a = array();
         $path['errno'] = 0;
         $path_img = $request->file('wang_file')->store('public');
 
