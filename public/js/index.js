@@ -1,11 +1,12 @@
 
 $(function () {
     if(isMobile() == true){
-        alert(1);
-        $('.case-index-box').css('opacity',1);
-        $('.flow-num,.flow-num div').css('opacity',1);
-        $('.flow-content').css('opacity',1);
-        $('.fb-button-path').css('opacity',1);
+        $('.case-index-box').css('animation-play-state','running');
+        $('.flow-num,.flow-num div').css('animation-play-state','running');
+        $('.flow-content').css('animation-play-state','running');
+        $('.fb-button-path').css('animation-play-state','running');
+
+        alert($('.case-index-box').css('animation-play-state'));
     }
 })
 
