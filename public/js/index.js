@@ -6,17 +6,10 @@ $(window).scroll(function () {
     console.log(mobileScrollTop);
     var topp = $(document).scrollTop();
     if(isMobile()){
-        if(mobileScrollTop > 0){
-            $('.case-index-box').css('animation-play-state','running');
-        }
-        if(mobileScrollTop > 642){
-            $('.flow-num,.flow-num div').css('animation-play-state','running');
-            $('.flow-content').css('animation-play-state','running');
-        }
-
-        if(mobileScrollTop > 1248){
-            $('.fb-button-path').css('animation-play-state','running');
-        }
+        $('.case-index-box').css('animation-play-state','running');
+        $('.flow-num,.flow-num div').css('animation-play-state','running');
+        $('.flow-content').css('animation-play-state','running');
+        $('.fb-button-path').css('animation-play-state','running');
 
     }else{
         if(topp > 553){
