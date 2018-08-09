@@ -17,6 +17,8 @@ class UploadsController extends Controller
 
         $path['data'] = [env('APP_URL').Storage::url($path_img)];
         return $path;
+
+
         
     }
 }
