@@ -16,7 +16,7 @@ class UploadsController extends Controller
         $path_img = $request->file('wang_file')->store('public');
 
         $path['data'] = [env('APP_URL').Storage::url($path_img)];
-        //
         return $path;
+        
     }
 }
