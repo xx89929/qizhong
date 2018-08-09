@@ -111,7 +111,7 @@ class NewsController extends Controller
             );
             $form->image('banner','新闻横幅')->uniqueName()->resize(555,331);
             $form->text('author','作者');
-            $form->url('original_href','原创连接');
+            $form->url('original_href','原创连接')->rules('nullable');
             $form->number('look_num','查看记录数量')->default(rand(100,200));
             $form->number('share_num','分享记录数量')->default(rand(50,99));
             $form->editor('content','新闻内容');
