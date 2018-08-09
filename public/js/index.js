@@ -1,11 +1,16 @@
 
+$(document).ready(function(){
+    if(isMobile() == true){
+        MobileAnimation();
+    }
+})
 
-if(isMobile() == true){
+
+function MobileAnimation(){
     $('.case-index-box').css('animation-play-state','running');
     $('.flow-num,.flow-num div').css('animation-play-state','running');
     $('.flow-content').css('animation-play-state','running');
     $('.fb-button-path').css('animation-play-state','running');
-
 }
 
 
