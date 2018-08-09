@@ -8,95 +8,16 @@
 
             <div class="news-warp">
                 <div class="row">
+                    @foreach($news as $new)
                     <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
+                        <label>{{$new->updated_at}}</label>
+                        <h4 title="{{$new->title}}"><a href="{{route('news.info',['news_id' => $new->id])}}">{{$new->title}}</a></h4>
+                        <label>标签:</label>
+                        @foreach($new->tags as $nt)
+                            <span><a href="{{route('news',['tags_id' => $nt->id])}}">{{$nt->tag_name}}</a></span>
+                        @endforeach
                     </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
-
-                    <div class="col-4 news-item-warp">
-                        <label>2018.8.2</label>
-                        <h4><a href="#">新闻测试标题</a></h4>
-                        <label>分类:</label>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-                        <span><a href="#">建站百科</a></span>
-
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

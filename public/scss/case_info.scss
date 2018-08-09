@@ -1,0 +1,58 @@
+@import "color";
+.case-info-title{
+
+  ul{
+    li{
+      &>a{
+        color: $sub-font-color;
+      }
+    }
+  }
+  h5{
+    color: $font-gray-color;
+  }
+  .demo-btn{
+    a{
+      padding: 5px 10px;
+      background-color: $sub-font-color;
+      color: white;
+      &:hover{
+        color: white !important;
+      }
+    }
+  }
+}
+
+.case-info-content{
+  margin: 40px 0;
+}
+.bg-pc-warp{
+  position: relative;
+  margin: 40px 0;
+}
+
+.case-pc-warp{
+  position: absolute;
+  width: 1047px;
+  height: 589px;
+  top: 46px;
+  left: 46px;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+.bg-mobile-warp{
+  position: relative;
+  margin: 40px 0;
+}
+
+.case-mobile-warp{
+  width: 300px;
+  height: 531px;
+  position: absolute;
+  left: 420px;
+  top: 83px;
+  overflow: hidden;
+}

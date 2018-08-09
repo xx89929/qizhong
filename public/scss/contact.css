@@ -1,0 +1,15 @@
+.contact-title {
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+.contact-item {
+  color: #707070; }
+
+.contact-warp {
+  margin-bottom: 40px; }
+  .contact-warp .contact-item {
+    border-bottom: 2px solid #707070; }
+    .contact-warp .contact-item:last-child {
+      border-bottom: 0; }
+
+/*# sourceMappingURL=contact.css.map */

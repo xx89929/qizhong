@@ -1,0 +1,41 @@
+.case-info-title ul li > a {
+  color: #0073ba; }
+.case-info-title h5 {
+  color: #707070; }
+.case-info-title .demo-btn a {
+  padding: 5px 10px;
+  background-color: #0073ba;
+  color: white; }
+  .case-info-title .demo-btn a:hover {
+    color: white !important; }
+
+.case-info-content {
+  margin: 40px 0; }
+
+.bg-pc-warp {
+  position: relative;
+  margin: 40px 0; }
+
+.case-pc-warp {
+  position: absolute;
+  width: 1047px;
+  height: 589px;
+  top: 46px;
+  left: 46px;
+  overflow: hidden; }
+  .case-pc-warp img {
+    width: 100%; }
+
+.bg-mobile-warp {
+  position: relative;
+  margin: 40px 0; }
+
+.case-mobile-warp {
+  width: 300px;
+  height: 531px;
+  position: absolute;
+  left: 420px;
+  top: 83px;
+  overflow: hidden; }
+
+/*# sourceMappingURL=case_info.css.map */

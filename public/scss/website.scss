@@ -1,0 +1,146 @@
+@import "color";
+
+.banner-website-box{
+  width: 100%;
+  position: relative;
+  height: 450px;
+  background-position: center center;
+}
+
+.banner-navs-warp{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #00000099;
+  padding:20px 0;
+  ul{
+    margin: 0;
+    li{
+      padding: 0 20px;
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+      a{
+        font-size: 20px;
+        color: white;
+        &:hover{
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+
+.banner-website-title{
+  position: relative;
+  top:100px;
+  p,h1,h4{
+    color: white;
+  }
+  h1,h4{
+    margin-bottom: 20px;
+  }
+  p{
+    margin-top: 20px;
+  }
+}
+
+.case-title{
+  margin: 20px 0;
+  position: relative;
+  padding:20px 0;
+  z-index: 10;
+}
+
+
+.case-title-svg{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -10;
+}
+
+.case-title-fill{
+  fill: none;
+  stroke-width: 3px;
+  stroke: #ddd;
+
+}
+
+.case-title-path{
+  fill: none;
+  stroke-width: 2px;
+  stroke: $font-gray-color;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 0,1400;
+  stroke-dashoffset: 0;
+  animation: caseTitlePathAnimation 5s both;
+}
+
+@keyframes caseTitlePathAnimation {
+  0%{
+    stroke-dasharray: 0,1400;
+  }
+  100%{
+    stroke-dasharray: 1400,1400;
+  }
+  
+}
+
+
+.case_item{
+  position: relative;
+  margin-bottom: 15px;
+  &:hover .case-item-bg-warp{
+    opacity: 1;
+    .case-item-bg-title{
+      h3,p{
+        transform: translateY(0);
+      }
+    }
+  }
+  img{
+    width: 100%;
+  }
+}
+
+.case-item-bg-warp{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 0;
+  transition: all .5s;
+  padding-top:72px;
+  overflow: hidden;
+}
+
+.case-item-bg-title{
+  &>p{
+    transition: all .5s;
+    transform: translateY(100px);
+    a{
+      font-size: 15px;
+    }
+  }
+  h3{
+    transform: translateY(-100px);
+    transition: all .5s;
+    margin-bottom: 20px;
+  }
+  a{
+    color: white;
+    &:hover{
+      color: white !important;
+    }
+  }
+}
+
+.case-warp{
+  margin-bottom: 40px;
+}

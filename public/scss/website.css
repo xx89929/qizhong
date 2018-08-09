@@ -1,0 +1,107 @@
+.banner-website-box {
+  width: 100%;
+  position: relative;
+  height: 450px;
+  background-position: center center; }
+
+.banner-navs-warp {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #00000099;
+  padding: 20px 0; }
+  .banner-navs-warp ul {
+    margin: 0; }
+    .banner-navs-warp ul li {
+      padding: 0 20px; }
+      .banner-navs-warp ul li:first-child {
+        padding-left: 0; }
+      .banner-navs-warp ul li:last-child {
+        padding-right: 0; }
+      .banner-navs-warp ul li a {
+        font-size: 20px;
+        color: white; }
+        .banner-navs-warp ul li a:hover {
+          color: white !important; }
+
+.banner-website-title {
+  position: relative;
+  top: 100px; }
+  .banner-website-title p, .banner-website-title h1, .banner-website-title h4 {
+    color: white; }
+  .banner-website-title h1, .banner-website-title h4 {
+    margin-bottom: 20px; }
+  .banner-website-title p {
+    margin-top: 20px; }
+
+.case-title {
+  margin: 20px 0;
+  position: relative;
+  padding: 20px 0;
+  z-index: 10; }
+
+.case-title-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10; }
+
+.case-title-fill {
+  fill: none;
+  stroke-width: 3px;
+  stroke: #ddd; }
+
+.case-title-path {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #707070;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 0,1400;
+  stroke-dashoffset: 0;
+  animation: caseTitlePathAnimation 5s both; }
+
+@keyframes caseTitlePathAnimation {
+  0% {
+    stroke-dasharray: 0,1400; }
+  100% {
+    stroke-dasharray: 1400,1400; } }
+.case_item {
+  position: relative;
+  margin-bottom: 15px; }
+  .case_item:hover .case-item-bg-warp {
+    opacity: 1; }
+    .case_item:hover .case-item-bg-warp .case-item-bg-title h3, .case_item:hover .case-item-bg-warp .case-item-bg-title p {
+      transform: translateY(0); }
+  .case_item img {
+    width: 100%; }
+
+.case-item-bg-warp {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all .5s;
+  padding-top: 72px;
+  overflow: hidden; }
+
+.case-item-bg-title > p {
+  transition: all .5s;
+  transform: translateY(100px); }
+  .case-item-bg-title > p a {
+    font-size: 15px; }
+.case-item-bg-title h3 {
+  transform: translateY(-100px);
+  transition: all .5s;
+  margin-bottom: 20px; }
+.case-item-bg-title a {
+  color: white; }
+  .case-item-bg-title a:hover {
+    color: white !important; }
+
+.case-warp {
+  margin-bottom: 40px; }
+
+/*# sourceMappingURL=website.css.map */

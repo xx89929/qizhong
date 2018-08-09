@@ -15,4 +15,8 @@ Route::group([
     $router->resource('webset', 'WebSetController');
     $router->resource('nav', 'NavsController');
     $router->resource('tc', 'TemplateCategoryController');
+    $router->resource('indexservices', 'IndexServicesController');
+    $router->resource('news_tag', 'NewsTagController');
+    $router->resource('news', 'NewsController');
+    $router->resource('cases', 'CasesController');
 });

@@ -1,17 +1,4 @@
 <section>
-    <div class="container">
-        <div class="fb-warp text-center">
-            <div class="fB-button">
-                <h3><a href="#">立刻体验</a></h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="fb-button-svg" version="1.1" width="252" height="63">
-                    {{--<path class="fb-button-fill"  d="M0 0 H 252 V63 H0 Z"/>--}}
-                    <path class="fb-button-path"  d="M182 0 H 252 V63 H70 "/>
-                    <path class="fb-button-path"  d="M70 63 H 0 V0 H182"/>
-                </svg>
-            </div>
-        </div>
-    </div>
-
     <div class="fb-content">
         <div class="container">
             <div class="row">
@@ -40,8 +27,8 @@
                 </div>
 
                 <div class="col-3">
-                    <h2>{{$webInfo->phone}}</h2>
-                    <h2>{{$webInfo->tel}}</h2>
+                    <h2>133-3755-0507</h2>
+                    <h2>0898-66766640</h2>
                 </div>
             </div>
         </div>

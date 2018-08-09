@@ -5,6 +5,7 @@
     @include('pc.home.index.ourCase')
     @include('pc.home.index.news')
     @include('pc.home.index.flow')
+    @include('pc.home.index.fb-warp')
     @include('pc.layouts.footBanner')
 @endsection
 

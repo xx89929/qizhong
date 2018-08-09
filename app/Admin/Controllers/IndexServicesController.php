@@ -75,8 +75,9 @@ class IndexServicesController extends Controller
 
             $grid->id('ID')->sortable();
 
-            $grid->created_at();
-            $grid->updated_at();
+            $grid->title('标题');
+            $grid->describe('描述');
+            $grid->href('连接');
         });
     }
 
@@ -90,9 +91,10 @@ class IndexServicesController extends Controller
         return Admin::form(IndexServices::class, function (Form $form) {
 
             $form->display('id', 'ID');
-
-            $form->display('created_at', 'Created At');
-            $form->display('updated_at', 'Updated At');
+            $form->text('title','标题');
+            $form->image('img_path','上传图片')->resize(250,185)->help('250*185像素');
+            $form->text('describe','描述');
+            $form->url('href','连接')->help('http://开头');
         });
     }
 }

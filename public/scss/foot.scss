@@ -8,7 +8,7 @@
     color: white !important;
 
   }
-  h3{
+  h5{
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 2px solid #59c4f9;
@@ -27,9 +27,8 @@
 
 .foot-r2{
   ul{
-    margin-bottom: 35px;
     li{
-      h3{
+      h5{
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 2px solid #59c4f9;
@@ -41,4 +40,15 @@
     }
   }
 
+}
+
+.foot-icp-warp{
+  padding-right:28px;
+  color: white;
+
+  .foot-icp{
+    margin-top: 20px;
+    padding-top:20px;
+    border-top:2px solid #59c4f9;
+  }
 }

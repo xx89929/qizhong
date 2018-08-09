@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Navs;
+use App\Models\TemplateCategory;
 use App\Models\WebSet;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
@@ -22,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
         $top_navs = Navs::GetTopNavs()->get();
         $sub_navs = Navs::GetSubNavs()->get();
+        $special_category = TemplateCategory::GetSpecial()->get();
         $disksPath = config('filesystems.disks.admin.url').'/';
         $webInfo = WebSet::find(1);
         View::share([
@@ -29,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
             'webInfo' => $webInfo,
             'top_navs' => $top_navs,
             'sub_navs' => $sub_navs,
+            'special_category' => $special_category,
         ]);
     }
 

@@ -40,13 +40,13 @@ a:hover {
     .navs-warp a p {
       position: absolute;
       top: -11px;
-      left: 120px;
+      left: 111px;
       font-size: 50px; }
     .navs-warp a span {
       position: absolute;
       font-size: 15px;
-      top: 47px;
-      left: 113px; }
+      top: 48px;
+      left: 116px; }
 
 .navs-main {
   float: right;
@@ -151,12 +151,14 @@ a:hover {
 
 .fb-warp {
   margin: 80px 0; }
+  .fb-warp h1 {
+    margin-bottom: 50px; }
 
 .fB-button {
   position: relative;
   display: inline-block; }
   .fB-button h3 {
-    padding: 15px 70px; }
+    padding: 15px 46px; }
     .fB-button h3 a:hover {
       color: inherit !important; }
 
@@ -188,8 +190,17 @@ a:hover {
     opacity: 1; } }
 .fb-content {
   padding: 40px 0;
-  border-top: 2px solid #a4a4a4; }
+  border-top: 2px solid #a4a4a4;
+  max-height: 182px; }
   .fb-content span {
     font-size: 40px; }
+
+.global-bottom-warp h3 {
+  margin: 40px 0; }
+  .global-bottom-warp h3 a {
+    padding: 6px 20px;
+    border: 2px solid #707070; }
+    .global-bottom-warp h3 a:hover {
+      color: inherit !important; }
 
 /*# sourceMappingURL=global.css.map */

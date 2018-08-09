@@ -4,12 +4,14 @@
             <div class="flow-tit text-center">
                 <h1>企众出品</h1>
                 <h4>引领海南技术最前沿</h4>
-
-                <div class="flow-num row justify-content-center">
-                    <div><i class="iconfont icon-shuzi1"></i></div>
-                    <div><i class="iconfont icon-shuzi0"></i></div>
-                    <div><i class="iconfont icon-shuzi0"></i></div>
+                <div class="flow-num-box">
+                    <div class="flow-num row justify-content-center">
+                        <div><i class="iconfont icon-shuzi1"></i></div>
+                        <div><i class="iconfont icon-shuzi0"></i></div>
+                        <div><i class="iconfont icon-shuzi0"></i></div>
+                    </div>
                 </div>
+
 
                 <div class="flow-content" style="background: url('{{url("img/bg1.png")}}')">
                     <div class="row">

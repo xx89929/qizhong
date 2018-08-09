@@ -94,11 +94,16 @@ class NavsController extends Controller
     protected function form()
     {
         return Admin::form(Navs::class, function (Form $form) {
-
             $form->display('id', 'ID');
             $form->select('parent_id','父级')->options(Navs::selectOptions());
             $form->number('order','排序');
-            $form->text('title','标题');
+            $form->text('title','标题')->rules('max:18',[
+                'max' => '最多18个字符',
+            ]);
+            $form->image('banner_img','横幅图片')->uniqueName()->removable()->help('1920*450像素')->resize(1920,450);
+            $form->text('banner_big_title','大标题');
+            $form->text('banner_title','标题');
+            $form->text('banner_small_title','小标题');
 
         });
     }

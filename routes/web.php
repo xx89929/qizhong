@@ -19,6 +19,11 @@ Auth::routes();
 
 
 Route::namespace('Home')->group(function(){
-    Route::get('/', 'IndexController@index');
+    Route::get('/', 'IndexController@index')->name('/');
+    Route::get('web_website','WebSiteController@web_website')->name('web.website');
+    Route::get('case_info','CaseInfoController@index')->name('case.info');
+    Route::get('news','NewsController@index')->name('news');
+    Route::get('news_info','NewsController@newsInfo')->name('news.info');
+    Route::get('contact','ContactController@index')->name('contact');
 });
 

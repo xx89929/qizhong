@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="{{url('css/bootstrap.min.css')}}" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('scss/global.css')}}">
     <link rel="stylesheet" href="{{url('scss/foot.css')}}">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_772977_6fhc1x1g5be.css">
-    <title>@yield('title')</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_772977_y9gnyc3io8.css">
+    <title>@yield('title'){{$webInfo->seo_name}}</title>
+    <meta name="keywords" content="{{$webInfo->seo_keywords}}">
+    <meta name="keywords" content="{{$webInfo->seo_info}}">
     @yield('csss')
 </head>
 <body>
