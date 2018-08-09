@@ -1,14 +1,13 @@
 
-$(function () {
-    if(isMobile() == true){
-        $('.case-index-box').css('animation-play-state','running');
-        $('.flow-num,.flow-num div').css('animation-play-state','running');
-        $('.flow-content').css('animation-play-state','running');
-        $('.fb-button-path').css('animation-play-state','running');
 
-        alert($('.case-index-box').css('animation-play-state'));
-    }
-})
+if(isMobile() == true){
+    $('.case-index-box').css('animation-play-state','running');
+    $('.flow-num,.flow-num div').css('animation-play-state','running');
+    $('.flow-content').css('animation-play-state','running');
+    $('.fb-button-path').css('animation-play-state','running');
+
+}
+
 
 
 $(window).scroll(function () {
