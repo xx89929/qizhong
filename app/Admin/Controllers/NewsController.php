@@ -114,7 +114,7 @@ class NewsController extends Controller
             $form->url('original_href','原创连接')->rules('nullable');
             $form->number('look_num','查看记录数量')->default(rand(100,200));
             $form->number('share_num','分享记录数量')->default(rand(50,99));
-            $form->editor('content','新闻内容');
+            $form->ueditor('content','新闻内容');
 
             $form->datetime('release_at','发布时间');
 
