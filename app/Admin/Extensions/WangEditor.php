@@ -25,7 +25,7 @@ class WangEditor extends Field
 var E = window.wangEditor
 var editor = new E('#{$this->id}');
 editor.customConfig.zIndex = 0
-
+editor.customConfig.pasteFilterStyle = true
 
 
 
