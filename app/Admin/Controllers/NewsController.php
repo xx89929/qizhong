@@ -104,8 +104,13 @@ class NewsController extends Controller
         return Admin::form(News::class, function (Form $form) {
 
             $form->display('id', 'ID');
-            $form->text('title','标题');
-            $form->text('description','描述');
+            $form->text('title','标题')->rules('required|max:18',[
+                'required' => '不能为空',
+                'max' => '最多不能超过18个字',
+            ]);
+            $form->text('description','描述')->rules('max:255',[
+                'max' => '最多不能超过255个字',
+            ]);;
             $form->multipleSelect('tags','标签')->options(
                 NewsTag::all()->pluck('tag_name','id')
             );
