@@ -42,9 +42,8 @@
 
             <div class="foot-icp-warp text-center ">
                 <div class="foot-icp">
-                    <p>Copyright 2018 www.qi-zhong.cn All Rights Reserved. 海南企众实业有限公司</p>
+                    <p>Copyright © 2018 海南企众实业有限公司 版权所有 琼ICP备17003672号-1</p>
 
-                    <p>琼ICP备17003672号-1</p>
                 </div>
             </div>
 

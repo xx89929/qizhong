@@ -23,6 +23,16 @@
                             <span>分享数：{{$news->share_num}}</span>
                         </li>
 
+
+                        <li class="list-inline-item">
+                            @if(!empty($news->author))
+                                原创作者：<span>{{$news->author}}</span>
+                            @else
+                                原创作者：<span>{{$webInfo->web_name}}</span>
+                            @endif
+                        </li>
+
+
                         @if(!empty($news->original_href))
                             <li class="list-inline-item">
                                 原创链接：<a href="{{$news->original_href}}" target="_blank">点击进入原创</a>
@@ -39,7 +49,7 @@
                     <div class="col-6 ">
                         @if(isset($pre_news))
                         <div class="pre-news-btn news-btn text-center">
-                            <a title="{{$pre_news->title}}" href="{{route('news.info',['news_id' => $pre_news->id])}}">上一篇：{{$pre_news->title}}</a>
+                            <a title="{{$pre_news->title}}" href="{{route('news.info',['news_id' => $pre_news->id])}}">上一篇：{{str_limit($pre_news->title,22)}}</a>
                         </div>
                         @endif
                     </div>
@@ -47,7 +57,7 @@
                     <div class="col-6">
                         @if(isset($next_news))
                         <div class="next-news-btn news-btn text-center">
-                            <a  title="{{$next_news->title}}" href="{{route('news.info',['news_id' => $next_news->id])}}">下一篇：{{$next_news->title}}</a>
+                            <a  title="{{$next_news->title}}" href="{{route('news.info',['news_id' => $next_news->id])}}">下一篇：{{str_limit($next_news->title,22)}}</a>
                         </div>
                         @endif
                     </div>

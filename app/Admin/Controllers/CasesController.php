@@ -145,7 +145,7 @@ class CasesController extends Controller
 
             $form->switch('index_display','是否显示首页')->states($this->index_display);
 
-            $form->editor('content','模板内容');
+            $form->ueditor('content','模板内容');
             $form->display('created_at', '创建时间');
             $form->display('updated_at', '更新时间');
         });

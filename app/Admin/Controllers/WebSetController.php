@@ -98,7 +98,7 @@ class WebSetController extends Controller
             $form->text('seo_info','网站描述');
             $form->text('phone','手机');
             $form->text('tel','电话');
-            $form->editor('about_us','关于我们');
+            $form->ueditor('about_us','关于我们');
 
         });
     }
