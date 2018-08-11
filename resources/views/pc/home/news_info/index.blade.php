@@ -23,14 +23,11 @@
                             <span>分享数：{{$news->share_num}}</span>
                         </li>
 
-
-                        <li class="list-inline-item">
-                            @if(!empty($news->author))
+                        @if(!empty($news->author))
+                            <li class="list-inline-item">
                                 原创作者：<span>{{$news->author}}</span>
-                            @else
-                                原创作者：<span>{{$webInfo->web_name}}</span>
-                            @endif
-                        </li>
+                            </li>
+                        @endif
 
 
                         @if(!empty($news->original_href))
