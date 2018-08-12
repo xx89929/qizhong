@@ -123,8 +123,10 @@
   z-index: 99; }
   .news-item-warp label {
     color: #707070; }
-  .news-item-warp h4 a:hover {
-    color: inherit !important; }
+  .news-item-warp h4 {
+    height: 56px; }
+    .news-item-warp h4 a:hover {
+      color: inherit !important; }
   .news-item-warp span {
     border-right: 1px solid #707070;
     padding: 0 5px; }
