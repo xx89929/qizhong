@@ -1,7 +1,12 @@
 @import "color";
 .news-banner{
-  height: 300px;
+  height: 240px;
   overflow: hidden;
+  h1{
+    color: white;
+    position: relative;
+    top:85px;
+  }
 }
 
 .news-warp{

@@ -2,7 +2,8 @@
 
 
 @section('content')
-    <div class="news-banner" style="background: url('http://www.fractal-technology.com/Public/static/themes/image/bg2.jpg')">
+    <div class="news-banner" style="background-image: url('http://www.fractal-technology.com/Public/static/themes/image/bg2.jpg')">
+        <h1 class="text-center">海南企众让您的企业更出众</h1>
     </div>
 
     <div class="container">

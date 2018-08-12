@@ -114,7 +114,7 @@ class NewsController extends Controller
             $form->multipleSelect('tags','标签')->options(
                 NewsTag::all()->pluck('tag_name','id')
             );
-            $form->image('banner','新闻横幅')->uniqueName()->resize(555,331);
+            $form->image('banner','新闻横幅')->uniqueName()->resize(540,322);
             $form->text('author','作者');
             $form->url('original_href','原创连接')->rules('nullable');
             $form->number('look_num','查看记录数量')->default(rand(100,200));
