@@ -132,10 +132,7 @@ class CasesController extends Controller
             $form->image('mobile_img','手机版截图')->uniqueName()->resize(300,null,function ($constraint){
                 $constraint->aspectRatio(); //按比例缩放
             })->removable()->help('300*N 像素');
-
-            $form->multipleSelect('category','案例分类')->options(
-                TemplateCategory::where('parent_id','<>',0)->pluck('title','id')
-            );
+            
 
             $form->multipleSelect('navs','推送导航')->options(
                 Navs::where('parent_id','<>',0)->pluck('title','id')
