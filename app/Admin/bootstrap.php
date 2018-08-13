@@ -24,6 +24,7 @@ use App\Admin\Extensions\Column\UrlWrapper;
 use Encore\Admin\Grid\Column;
 use Encore\Admin\Facades\Admin;
 use App\Admin\Extensions\UEditor;
+use App\Admin\Extensions\Aetherupload;
 
 Encore\Admin\Form::forget(['map', 'editor']);
 
@@ -32,5 +33,6 @@ Admin::js('/vendor/clipboard/dist/clipboard.js');
 
 Form::extend('editor', WangEditor::class);
 Form::extend('ueditor', UEditor::class);
+Form::extend('bigdata', Aetherupload::class);
 Column::extend('urlWrapper', UrlWrapper::class);
 

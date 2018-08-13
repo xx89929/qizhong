@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Home;
 
 
+use App\Models\Cases;
 use App\Models\Navs;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -30,7 +31,6 @@ class WebSiteController extends Controller
 
             $cases = $test->unique('id');
 
-
         }else{
             $cases = $nav->cases()->get();
 
@@ -41,6 +41,16 @@ class WebSiteController extends Controller
             $webnavs = Navs::where('parent_id',$nav->parent_id)->get();
 
         }
+
+
+        //如果没有案例 则 随机抽取9条案例
+        if($cases->isEmpty()){
+            $cases = Cases::all()->random(9);
+            foreach ($cases as $key => $case){
+                $cases[$key]->navs = $case->navs()->get();
+            }
+        }
+
 
         return view('pc.home.website.web_website',[
             'webnavs' => $webnavs,
