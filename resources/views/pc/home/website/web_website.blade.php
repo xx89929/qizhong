@@ -24,6 +24,10 @@
         </div>
     </div>
 
+        @if(!empty($nav->template))
+            @include("pc.home.sub-template.$nav->template")
+        @endif
+
     <section>
         <div class="container">
             <div class="case-title">

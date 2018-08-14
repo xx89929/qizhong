@@ -19,4 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::middleware('api')->namespace('Api')->group(function (){
     Route::post('edit_uploads','UploadsController@editUploads');
+    Route::get('template_files','FilesManageController@getTemplateFiles');
 });

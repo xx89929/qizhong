@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 
+use App\Http\Controllers\Api\FilesManageController;
 use App\Models\Navs;
 
 use Encore\Admin\Form;
@@ -101,6 +102,13 @@ class NavsController extends Controller
                 'max' => '最多18个字符',
             ]);
             $form->image('banner_img','横幅图片')->uniqueName()->removable()->help('1920*450像素')->resize(1920,450);
+            $form->select('template','使用模板')->help('采集模板路径：views/pc/home/sub-tmeplate/')->options(function () {
+                $FilesManage = new FilesManageController();
+
+                $res = $FilesManage->getTemplateFiles();
+                $res[' '] = '空';
+                return $res;
+            });
             $form->text('banner_big_title','大标题');
             $form->text('banner_title','标题');
             $form->text('banner_small_title','小标题');

@@ -25,5 +25,6 @@ Route::namespace('Home')->group(function(){
     Route::get('news','NewsController@index')->name('news');
     Route::get('news_info','NewsController@newsInfo')->name('news.info');
     Route::get('contact','ContactController@index')->name('contact');
+    Route::get('test','TestController@index')->name('test');
 });
 
