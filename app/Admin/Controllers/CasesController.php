@@ -129,7 +129,6 @@ class CasesController extends Controller
                 $constraint->aspectRatio(); //按比例缩放
             })->removable()->help('1047*N 像素');
 
-            $form->bigdata('pc_img','测试');
 
             $form->image('mobile_img','手机版截图')->uniqueName()->resize(300,null,function ($constraint){
                 $constraint->aspectRatio(); //按比例缩放
