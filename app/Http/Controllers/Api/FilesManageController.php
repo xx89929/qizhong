@@ -10,7 +10,7 @@ class FilesManageController extends Controller
 {
 
     public function getTemplateFiles(){
-        $path = base_path('resources\views\pc\home\sub-template');
+        $path = base_path('resources/views/pc/home/sub-template');
         $files = scandir($path);
         foreach ($files as $file) {
 
