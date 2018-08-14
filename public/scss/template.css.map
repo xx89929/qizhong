@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEE,8BAAC;EACC,KAAK,ECDS,OAAO;;ADKzB,yBAAyB;EACvB,MAAM,EAAE,MAAM",
+"mappings": "AAEE,0BAAC;EACC,KAAK,ECDS,OAAO;;ADKzB,qBAAqB;EACnB,MAAM,EAAE,MAAM;;AAId,6BAAG;EACD,KAAK,EAAE,IAAI",
 "sources": ["template.scss","color.scss"],
 "names": [],
 "file": "template.css"

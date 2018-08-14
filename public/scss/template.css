@@ -1,7 +1,10 @@
-.wechat-mini-program-content p {
+.common-template-content p {
   color: #707070; }
 
-.wechat-mini-program-warp {
+.common-template-warp {
   margin: 40px 0; }
+
+.web_mobile-template-warp img {
+  width: 100%; }
 
 /*# sourceMappingURL=template.css.map */

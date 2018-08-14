@@ -1,10 +1,16 @@
 @import "color";
-.wechat-mini-program-content{
+.common-template-content{
   p{
     color: $font-gray-color;
   }
 }
 
-.wechat-mini-program-warp{
+.common-template-warp{
   margin: 40px 0;
+}
+
+.web_mobile-template-warp{
+  img{
+    width: 100%;
+  }
 }
